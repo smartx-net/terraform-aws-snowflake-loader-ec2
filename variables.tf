@@ -252,6 +252,12 @@ variable "retry_queue_interval" {
   }
 }
 
+variable "java_opts" {
+  description = "Custom Java Options"
+  default     = ""
+  type        = string
+}
+
 # --- Iglu Resolver
 
 variable "default_iglu_resolvers" {
