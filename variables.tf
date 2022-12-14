@@ -66,6 +66,11 @@ variable "cloudwatch_logs_retention_days" {
   type        = number
 }
 
+variable "extra_iam_policy" {
+  description = "Extra IAM policy to attach"
+  type        = map(string)
+}
+
 # --- Configuration options
 
 variable "sqs_queue_name" {
