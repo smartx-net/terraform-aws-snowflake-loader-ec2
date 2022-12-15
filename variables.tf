@@ -252,6 +252,12 @@ variable "retry_queue_interval" {
   }
 }
 
+variable "extra_user_data" {
+  description = "Extra user data to run"
+  default     = ""
+  type        = string
+}
+
 variable "java_opts" {
   description = "Custom Java Options"
   default     = ""
